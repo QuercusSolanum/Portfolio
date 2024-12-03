@@ -1,0 +1,15 @@
+<script>
+	const video = document.getElementById('project1 video');
+
+	video.addEventListener('click', () => {
+		if (video.requestFullscreen) {
+			video.requestFullscreen();
+		} else if (video.mozRequestFullscreen) {
+			video.mozRequestFullscreen();
+		} else if (video.webkitRequestFullscreen) {
+			video.webkitRequestFullscreen();
+		} else if (video.msRequestFullscreen) {
+			video.msRequestFullscreen();
+		}
+	});
+</script>
